@@ -1,12 +1,12 @@
 ###################### Official cran packages ######################
 
 ## HH original script
-csna_dep_packages = c("RSQLite", "RcppEigen", "data.table", "foreach", "doParallel", "parallel", "abind", "gap", "lme4", "gridExtra", "xlsx", "devtools", "tidyverse", "git2r", "qtl2", "regress", "rJava", "Rcpp", "ggpubr", "rlang", "furrr", "future", "ellipsis")
+csna_dep_packages = c("RSQLite", "RcppEigen", "data.table", "foreach", "doParallel", "parallel", "abind", "gap", "lme4", "gridExtra", "devtools", "tidyverse", "git2r", "qtl2", "regress", "Rcpp", "ggpubr", "rlang", "furrr", "future", "ellipsis")
 
 install.packages(csna_dep_packages, repos="http://cran.us.r-project.org", dependencies = TRUE)
 
 ## Additonal pacakges required by projects
-proj_packages = c("GGally", "tidymodels", "broom", "corrplot", "qtl2ggplot", "ggbeeswarm", "gplots", "RColorBrewer", "statmod", "MASS", "tibble", "ggplot2", "optparse", "qtl", "qtlbook", "plyr", "EnvStats", "knitr", "corrgram", "kableExtra", "tidyr", "mclust", "rhdf5", "dplyr", "cluster", "readxl", "psych", "reshape2", "workflowr")
+proj_packages = c("GGally", "tidymodels", "broom", "corrplot", "qtl2ggplot", "ggbeeswarm", "gplots", "RColorBrewer", "statmod", "MASS", "tibble", "ggplot2", "optparse", "qtl", "qtlbook", "plyr", "EnvStats", "knitr", "corrgram", "kableExtra", "tidyr", "mclust", "dplyr", "cluster", "readxl", "psych", "reshape2", "workflowr")
 
 install.packages(proj_packages, repos="http://cran.us.r-project.org", dependencies = TRUE)
 
@@ -36,9 +36,9 @@ install.packages(c("qtl2","qtl2convert"), repos="https://rqtl.org/qtl2cran", dep
 if (!requireNamespace("BiocManager", quietly=TRUE))
   install.packages("BiocManager", repos = "http://cran.us.r-project.org", dependencies = TRUE)
 
-
 BiocManager::install()
 BiocManager::install("Biobase")
+BiocManager::install("rhdf5")
 BiocManager::install("DESeq2")
 BiocManager::install("edgeR")
 BiocManager::install("clusterProfiler")
