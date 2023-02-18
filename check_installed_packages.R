@@ -4,7 +4,9 @@ proj_packages = c("GGally", "tidymodels", "broom", "corrplot", "qtl2ggplot", "gg
 
 miniconda_packages = c("reticulate","synapser")
 
-chk_pkgs <- = c(csna_dep_packages,proj_packages, miniconda_packages)
+minicran_packages = c("qtl2","qtl2convert")
+
+chk_pkgs <- c(csna_dep_packages,proj_packages, miniconda_packages, minicran_packages)
 
 suppressPackageStartupMessages(
   sapply(chk_pkgs, require, character.only=TRUE, quietly=FALSE, warn.conflicts=FALSE)
