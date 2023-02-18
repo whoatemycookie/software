@@ -29,7 +29,7 @@ csna_dep_packages = c(
 
 install.packages(csna_dep_packages, repos="http://cran.us.r-project.org", dependencies = TRUE)
 
-#Additonal pacakges required by projects
+## Additonal pacakges required by projects
 proj_packages = c(
   "GGally",
   "tidymodels",
@@ -87,7 +87,7 @@ install.packages(c("qtl2","qtl2convert"), repos="https://rqtl.org/qtl2cran", dep
 
 
 if (!requireNamespace("BiocManager", quietly=TRUE))
-install.packages("BiocManager", repos = "http://cran.us.r-project.org", dependencies = TRUE)
+  install.packages("BiocManager", repos = "http://cran.us.r-project.org", dependencies = TRUE)
 
 
 BiocManager::install()
