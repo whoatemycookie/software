@@ -1,7 +1,7 @@
 ###################### Official cran packages ######################
 
 ## HH original script
-csna_dep_packages <- c(
+csna_dep_packages = c(
   "RSQLite", 
   "RcppEigen", 
   "data.table", 
@@ -30,7 +30,7 @@ csna_dep_packages <- c(
 install.packages(csna_dep_packages, repos="http://cran.us.r-project.org", dependencies = TRUE)
 
 #Additonal pacakges required by projects
-proj_packages <- c(
+proj_packages = c(
   "GGally",
   "tidymodels",
   "broom",
@@ -67,7 +67,7 @@ install.packages(proj_packages, repos="http://cran.us.r-project.org", dependenci
 
 install.packages("reticulate")
 reticulate::install_miniconda()
-install.packages("synapser", repos = c("http://ran.synapse.org", "http://cran.fhcrc.org"), dependencies = TRUE);
+install.packages("synapser", repos = c("http://ran.synapse.org", "http://cran.fhcrc.org"), dependencies = TRUE)
 
 
 ###################### github packages ######################
@@ -80,7 +80,7 @@ remotes::install_github("jtliso/cliqueR")
 
 ###################### Minicran packages ######################
 
-install.packages(c("qtl2","qtl2convert"), repos="https://rqtl.org/qtl2cran", dependencies = TRUE);
+install.packages(c("qtl2","qtl2convert"), repos="https://rqtl.org/qtl2cran", dependencies = TRUE)
 
 
 ###################### Bioconductor Packages ######################
