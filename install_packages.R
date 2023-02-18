@@ -1,66 +1,12 @@
 ###################### Official cran packages ######################
 
 ## HH original script
-csna_dep_packages = c(
-  "RSQLite", 
-  "RcppEigen", 
-  "data.table", 
-  "foreach", 
-  "doParallel",
-  "parallel", 
-  "abind", 
-  "gap", 
-  "lme4", 
-  "gridExtra", 
-  "xlsx", 
-  "devtools", 
-  "tidyverse", 
-  "git2r", 
-  "qtl2", 
-  "regress", 
-  "rJava", 
-  "Rcpp", 
-  "ggpubr", 
-  "rlang", 
-  "furrr", 
-  "future", 
-  "ellipsis"
-)
+csna_dep_packages = c("RSQLite", "RcppEigen", "data.table", "foreach", "doParallel", "parallel", "abind", "gap", "lme4", "gridExtra", "xlsx", "devtools", "tidyverse", "git2r", "qtl2", "regress", "rJava", "Rcpp", "ggpubr", "rlang", "furrr", "future", "ellipsis")
 
 install.packages(csna_dep_packages, repos="http://cran.us.r-project.org", dependencies = TRUE)
 
 ## Additonal pacakges required by projects
-proj_packages = c(
-  "GGally",
-  "tidymodels",
-  "broom",
-  "corrplot",
-  "qtl2ggplot",
-  "ggbeeswarm",
-  "gplots",
-  "RColorBrewer",
-  "statmod",
-  "MASS",
-  "tibble",
-  "ggplot2",
-  "optparse",
-  "qtl",
-  "qtlbook",
-  "plyr",
-  "EnvStats",
-  "knitr",
-  "corrgram",
-  "kableExtra",
-  "tidyr",
-  "mclust",
-  "rhdf5",
-  "dplyr",
-  "cluster",
-  "readxl",
-  "psych",
-  "reshape2",
-  "workflowr"
-)
+proj_packages = c("GGally", "tidymodels", "broom", "corrplot", "qtl2ggplot", "ggbeeswarm", "gplots", "RColorBrewer", "statmod", "MASS", "tibble", "ggplot2", "optparse", "qtl", "qtlbook", "plyr", "EnvStats", "knitr", "corrgram", "kableExtra", "tidyr", "mclust", "rhdf5", "dplyr", "cluster", "readxl", "psych", "reshape2", "workflowr")
 
 install.packages(proj_packages, repos="http://cran.us.r-project.org", dependencies = TRUE)
 
@@ -117,7 +63,6 @@ BiocManager::install("RDAVIDWebService")
 BiocManager::install("org.Hs.eg.db")
 
 
-
 ###################### From source Packages ######################
 
 source("https://horvath.genetics.ucla.edu/html/CoexpressionNetwork/GeneAnnotation/installAnRichment.R")
@@ -126,4 +71,4 @@ installAnRichment()
 
 ###################### Updating Packages ######################
 
-update.packages(ask=F)
+update.packages(ask = FALSE)
