@@ -1,34 +1,5 @@
 ###################### Official cran packages ######################
 
-## HH original script
-csna_dep_packages = c(
-  "RSQLite", 
-  "RcppEigen", 
-  "data.table", 
-  "foreach", 
-  "doParallel",
-  "parallel", 
-  "abind", 
-  "gap", 
-  "lme4", 
-  "gridExtra", 
-  "xlsx", 
-  "devtools", 
-  "tidyverse", 
-  "git2r", 
-  "qtl2", 
-  "regress", 
-  "rJava", 
-  "Rcpp", 
-  "ggpubr", 
-  "rlang", 
-  "furrr", 
-  "future", 
-  "ellipsis"
-)
-
-install.packages(csna_dep_packages, repos="http://cran.us.r-project.org", dependencies = TRUE)
-
 ## Additonal pacakges required by projects
 proj_packages = c(
   "GGally",
