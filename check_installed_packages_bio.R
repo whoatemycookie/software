@@ -4,7 +4,7 @@ proj_packages = c("GGally", "tidymodels", "broom", "corrplot", "qtl2ggplot", "gg
 
 miniconda_packages = c("reticulate","synapser")
 
-minicran_packages = c("qtl2","qtl2convert")
+minicran_packages = c("qtl2","qtl2convert","qtlDesign")
 
 bioconductor_packages = c("BiocManager","rhdf5","Biobase","DESeq2","edgeR","clusterProfiler","pathview","enrichplot","karyoploteR","diffloop","regioneR","TxDb.Hsapiens.UCSC.hg19.knownGene","ComplexHeatmap","esATAC","phyloseq","tximport","biomaRt","WGCNA","limma","AnnotationHub","RDAVIDWebService","org.Hs.eg.db","TxDb.Hsapiens.UCSC.hg19.knownGene")
 
